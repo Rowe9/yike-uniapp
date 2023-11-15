@@ -2,7 +2,7 @@
 	<view class="content">
 		<view class="top-bar">
 			<view class="top-bar-left" @tap="goBack">
-				<image class="back-img" src="../static/image/common/back.png" mode=""></image>
+				<image class="back-img" src="../../static/image/common/back.png" mode=""></image>
 			</view>
 			<view class="top-bar-center">
 				<view class="title">详情</view>
@@ -20,7 +20,7 @@
 						 	 <image :src="cropFilePath" @tap="upload" class="user-img" ></image>
 					</view>
 					<view class="more">
-						<image src="../static/image/userHome/more.png" mode="aspectFit"></image>
+						<image src="../../static/image/userHome/more.png" mode="aspectFit"></image>
 					</view>
 				</view>
 				<view class="row" @tap="modifty('签名', dataArr.sign, false)">
@@ -29,7 +29,7 @@
 						{{dataArr.sign}}
 					</view>
 					<view class="more">
-						<image src="../static/image/userHome/more.png" mode="aspectFit"></image>
+						<image src="../../static/image/userHome/more.png" mode="aspectFit"></image>
 					</view>
 				</view>
 				<view class="row">
@@ -47,7 +47,7 @@
 						{{dataArr.name}}
 					</view>
 					<view class="more">
-						<image src="../static/image/userHome/more.png" mode="aspectFit"></image>
+						<image src="../../static/image/userHome/more.png" mode="aspectFit"></image>
 					</view>
 				</view>
 				<view class="row">
@@ -58,7 +58,7 @@
 						</picker>
 					</view>
 					<view class="more">
-						<image src="../static/image/userHome/more.png" mode="aspectFit"></image>
+						<image src="../../static/image/userHome/more.png" mode="aspectFit"></image>
 					</view>
 				</view>
 				<view class="row">
@@ -69,7 +69,7 @@
 						</picker>
 					</view>
 					<view class="more">
-						<image src="../static/image/userHome/more.png" mode="aspectFit"></image>
+						<image src="../../static/image/userHome/more.png" mode="aspectFit"></image>
 					</view>
 				</view>
 				<view class="row" @tap="modifty('电话', dataArr.tell, false)">
@@ -78,7 +78,7 @@
 						{{dataArr.tell}}
 					</view>
 					<view class="more">
-						<image src="../static/image/userHome/more.png" mode="aspectFit"></image>
+						<image src="../../static/image/userHome/more.png" mode="aspectFit"></image>
 					</view>
 				</view>
 				<view class="row" @tap="modifty('邮箱', dataArr.email, true)">
@@ -87,7 +87,7 @@
 						{{dataArr.email}}
 					</view>
 					<view class="more">
-						<image src="../static/image/userHome/more.png" mode="aspectFit"></image>
+						<image src="../../static/image/userHome/more.png" mode="aspectFit"></image>
 					</view>
 				</view>
 			</view>
@@ -99,7 +99,7 @@
 						******
 					</view>
 					<view class="more">
-						<image src="../static/image/userHome/more.png" mode="aspectFit"></image>
+						<image src="../../static/image/userHome/more.png" mode="aspectFit"></image>
 					</view>
 				</view>
 			</view>
@@ -121,8 +121,8 @@
 </template>
 
 <script>
-	import ImageCropper from "../uni_modules/ling-imgcropper/components/ling-imgcropper/ling-imgcropper.vue"
-	import myfun from '../commons/js/myfun.js'
+	import ImageCropper from '../../uni_modules/ling-imgcropper/components/ling-imgcropper/ling-imgcropper.vue'
+	import myfun from '../../commons/js/myfun.js'
 	
 	export default {
 		data() {
@@ -297,7 +297,7 @@
 </script>
 
 <style lang="scss">
-	@import "../commons/css/common.scss";
+	@import "../../commons/css/common.scss";
 	
 	.top-bar {
 		background: rgba(255, 255, 255, 0.96);

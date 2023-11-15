@@ -9,7 +9,7 @@
 			</view>
 			<view class="top-bar-right">
 				<image class="search" @tap="toSearch" src="../../static/image/index/search.png" mode=""></image>
-				<image class="add" src="../../static/image/index/add.png" mode=""></image>
+				<image class="add" src="../../static/image/index/add.png" mode="" @tap="toBuildGroup"></image>
 			</view>
 		</view>
 		
@@ -86,6 +86,12 @@
 			toSearch: function() {
 				uni.navigateTo({
 					url: '../search/search',
+				})
+			},
+			
+			toBuildGroup:function(){
+				uni.navigateTo({
+					url: '../buildgroup/buildgroup',
 				})
 			},
 			
