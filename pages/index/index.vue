@@ -84,7 +84,7 @@
 			
 			// 跳转到登录页面
 			toSearch: function() {
-				uni.navigateTo({
+				uni.switchTab({
 					url: '../search/search',
 				})
 			},

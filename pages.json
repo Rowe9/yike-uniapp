@@ -15,7 +15,7 @@
             {
                 // "navigationBarTitleText": "ssss",
                 // "enablePullDownRefresh": false
-				"navigationStyle": "custom"
+				// "navigationStyle": "custom"
             }
             
         }
@@ -25,7 +25,7 @@
             {
                 // "navigationBarTitleText": "",
                 // "enablePullDownRefresh": false
-				"navigationStyle": "custom"
+				// "navigationStyle": "custom"
             }
             
         }
@@ -103,7 +103,45 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "default"
+		
 	},
+	
+	"tabBar":{
+			"borderStyle":"black",//边框颜色
+			"backgroundColor":"#F7F7F7",//背景颜色
+			"color":"#000000",//默认颜色
+			"selectedColor":"#07C160",//选中的颜色
+			"list":[
+				{
+					"iconPath":"static/image/navbar/home.png",
+					"selectedIconPath":"static/image/navbar/homeSelected.png",
+					"text":"消息",
+					"pagePath":"pages/index/index"
+				},
+				
+				{
+					"iconPath":"static/image/navbar/chatList.png",
+					"selectedIconPath":"static/image/navbar/chatListSelected.png",
+					"text":"通讯录",
+					"pagePath":"pages/friendRequest/friendRequest"
+				},
+				{
+					"iconPath":"static/image/navbar/find.png",
+					"selectedIconPath":"static/image/navbar/findSelected.png",
+					"text":"发现",
+					"pagePath":"pages/search/search"
+				},
+				{
+					"iconPath":"static/image/navbar/mine.png",
+					"selectedIconPath":"static/image/navbar/mineSelected.png",
+					"text":"我",
+					"pagePath":"pages/signin/signin"
+				}
+			]
+		}
+	,
+	
 	"uniIdRouter": {}
 }
